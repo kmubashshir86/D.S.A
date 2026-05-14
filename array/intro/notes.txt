@@ -1,0 +1,57 @@
+what is array?
+
+[array is list of same data type held in a order with a marking 0 to n-1 
+if n elemennts are present is known as index]
+
+
+what problem it solve?
+
+[it group together multiple variable(values) under a variable]
+
+=>declaration of array
+<data_type> <arrayname>[ <array size> ];
+
+=>initializing an array
+<data_type> <arrayname>[ <array size> ]={element1,element2.....,elementn};
+or
+<array_name>[k];
+or
+<array_name>[k]=xyz;
+
+element1 store on an address lets say x and the data_type occupy y bytes 
+then the address of next element goes in order x+ny where n is index of 
+element (this is how they stored contigously in memory)
+
+if array declared in global scope its all element will be initialize with 0
+while in local / main it will initialize with garbage values
+maximum size of array in gloabl 10^7 and 10^6 in local/main
+
+indexes in array
+lets say array declaration as char arr[3];
+arr[0]=66;
+arr[0]=65;
+arr[1]='B';
+arr[2]='C';
+std::cout<<arr[0];
+
+for array of size n index goes from 0 to n-1
+
+initializing an array from a specific value
+*use algorithm library
+#include <algorithm>
+then from inside it use fill function
+
+syntax:
+fill(start_iterator, end_iterator, value);
+using previous array so
+int size = 3;
+fill(arr,arr+size,'A');
+array will be like {'A','A','A'};
+
+
+______________________________________________________________________________
+summary:
+
+*homogenous 
+*contigous
+

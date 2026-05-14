@@ -1,0 +1,5 @@
+so 
+int n = k; //even if it came from input 
+int arr[n];
+
+both are VLA variable length array so use const int n instead of int n;

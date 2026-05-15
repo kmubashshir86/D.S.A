@@ -1,0 +1,54 @@
+so we have an array of size n another of size m
+
+int arr[n]={};
+int ARR[m]={};
+
+we have to find int ans[]={};  //intersection
+
+######### first approach ###############
+
+i traverse through arr and find its element in ARR if i got i will replace in ARR and store in
+ans replacement will take place cause it doesn't count twice then samr for next element of arr 
+till end 
+
+going to write code in ans_bf bf==brute force
+
+O(nxm)=O(n^2)
+
+###### second approach ################
+
+given both array are given in not decreasing order (increasing 1 2 3 ...)
+
+{1,2,3,4}
+{2,3,4}
+
+arr[i]=1
+ARR[j]=2
+ab agar mai arr[i]=1 mai ARR mai dhundunga toh faida nhi hai increasing hai
+first element hi 2 hai toh age toh 1 ghanta milega so
+
+else if(ARR[j]>arr[i]){break;}
+
+######### third approach #########################
+
+so both of two upper approaches are of O(N^2)
+for O(N)
+
+toh dekho
+
+i=0 for arr
+j=0 for ARR
+
+if(arr[i]==ARR[j]){
+    ARR[j]=INT_MIN;
+    i++;j++;
+}
+else if(ARR[j]>arr[i]){
+    i++;
+    break;
+}
+else if(ARR[j]<arr[i]){
+    j++;
+}
+
+it is 2 pointer approach O(max(n,m))  n m are sizes of both array

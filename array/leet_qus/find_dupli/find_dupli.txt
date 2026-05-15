@@ -1,0 +1,22 @@
+so we have an array of size n
+
+[ 1 , 2 ........ , n-1 , any one of them]
+
+toh lets suppose n = 11
+
+n-1 = 10
+
+[1,2,3,x,4,5,6,7,8,9,10]
+so we have x one of from 1 t0 10 or 1 to n-1
+
+so if i store xor of all elements in a single variable of arrays element
+then i will take its xor with a range from 0 to n-1 lefted ans in variable is x
+
+eg:-
+
+[1,2,x,3,4,5]
+ 
+ ans=1^2^x^3^4^5
+ ans^1=2^x^3^4^5
+ ...
+ ans=x

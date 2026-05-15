@@ -1,0 +1,23 @@
+so to find a maximum or minimum element of array we must have to traverse array one time atleast
+so mini complexity came to O(n)
+
+>>2 ideas here i got
+
+1!!! idea :
+
+firstly i store 0th element in a var
+then traverse array from index 1 to n-1 where n is size
+and check each element 
+{for maximum}
+if element is bigger store that var
+else pass
+{for minimum}
+if element is lower store that var
+else pass
+
+2!!! idea :
+
+here i store -inf for maximum as every element is bigger then -inf
+and vice versa for minimum
+
+then do the same there as we does previously

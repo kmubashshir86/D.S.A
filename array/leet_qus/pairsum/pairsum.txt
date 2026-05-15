@@ -1,0 +1,32 @@
+so we have to find pairsum
+
+lets say we get array
+
+{1,2,3,4,5,6}
+and number is seven
+
+so we have to print 
+1 6
+2 5
+3 4
+
+######### brute force ##########
+loop on same array
+    loop on same array
+        if element of outer loop array + inner loop array element == sum
+            print replace break
+
+replace why cause a + b = sum if a is same b will same so we have to replace inner loop array element so that 
+we can avoid printing (b,a) if (a,b) is printed
+
+
+##########2 nd optimization is ###################
+if arr is increasing order okay
+
+if (arr[i]+arr[j]>sum){
+    break
+}
+
+############ linear complexity by 2 pointer approach ########
+
+you know already 2 ptr approach a ptr start from end j and a from starting i 

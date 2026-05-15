@@ -50,5 +50,5 @@ else if(ARR[j]>arr[i]){
 else if(ARR[j]<arr[i]){
     j++;
 }
-
+and loop will run till i < n and j < m;
 it is 2 pointer approach O(max(n,m))  n m are sizes of both array

@@ -1,0 +1,37 @@
+we got an array of size n
+
++ size = n
++ i start = 0
++ i end = n-1 
+
+given n = 2m+1 
+
+2m+1 is odd 
+
+so they saying 2m + 1
+
+pair of two same no are m times
+and 1 is not in pair we have to recognize that
+
+so we are going to use ^ xor binary operation(bitwise operator)
+
+properties
+a^0=a
+a^a=0
+
+usko find krne ke liye atleast ek baar pura traverse krna padega
+O(n)
+
+store zero in var
+then take its xor with arr[0] and store it in same var
+then take that var xor with next element then next then next till 2mth index
+
+and that variable will be lefted with that single value
+
+0^1st element = 1st element
+1st element ^ 2nd element = 1st element ^ 2nd element
+1st element ^ 2nd element ^ 3rd element = 1st element ^ 2nd element ^ 3rd element1st element 
+1st ^ 2nd ^ ..... ^ 2m+1 th = (m pair will give 0) ^ lefted one 
+
+using property a^0=a
+=lefted one

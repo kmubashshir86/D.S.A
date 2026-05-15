@@ -1,0 +1,17 @@
+so we have to reverse an array lets say has size even(2n) and odd(2n+1)
+n is whole number
+
+
+got the even array as
+[1,2,3,.......,2n]   [0,2n)===[0,2n-1]
+and odd as
+[1,2,3,4,...2n+1]    [0,2n+1)===[0,2n]
+
+for even 
+if i swap 0th element with 2n-1th
+          1           with 2n-2
+
+pattern obeserve if for loop range goes from 0 to 2n-1/2
+then swap i with 2n-1-i th element
+
+while for the odd same thing happen and middle single element does never move so

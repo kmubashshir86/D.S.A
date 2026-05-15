@@ -1,0 +1,7 @@
+ls stand for linear search 
+
+it is way to search any item stored in array and annoucing it's index
+so worstly it can be run array size times so O(n)
+
+we check in this element one by one wether it is equal to key f it is return the index
+else goto next element if exsist any

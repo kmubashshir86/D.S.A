@@ -1,0 +1,3 @@
+inside function array is passed as pointer (pass by refrence pass by address)
+any changes to array inside function (local scope) is change in array everywhere
+as it is change in the main array store location

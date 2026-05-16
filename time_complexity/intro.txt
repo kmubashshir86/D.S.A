@@ -1,0 +1,44 @@
+it is amount of time taken by algorithm to run as an function of length input.
+
+why?
+for making efficient program
+to compare efficiency of algorithms
+
+notations
+big O worst case upper bound
+tetha average case mid bound
+omega best case lower bound
+
+O(1)  
+O(logN)
+O(N)
+O(NlogN)
+O(N^2)
+O(N^3)
+O(2^N)
+O(N!)   
+
+O(2N^2+2N+3+logN) = O(biggestone) = O(N^2)
+
+loop + loop = O(N+M)
+
+loop (loop) = O(N.M)
+
+10^8 opr rule
+
+all modern machine execute 10^8 opr per sec
+
+  Y
+[10,11]     O(N!) , O(n^6)
+[15,18]     O(2^N*N^2)
+100         O(N^4)
+400         O(N^3)
+2000        O(N^2*LOGN)
+exp(10,4)   O(N^2)
+exp(10,6)   O(NLOGN)
+exp(10,8)   O(N),O(LOGN)
+
+1 < N < ____
+          Y
+
+          

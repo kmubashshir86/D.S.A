@@ -1,0 +1,31 @@
+so for bs we should have an array of monotonic order either increasing or decreasing
+
+so in this
+
+we check middle element 
+if that is equal to key
+    print index return 0 
+
+else if that is greater then key 
+    means now as our array is increasing
+    next elements will be increasing so we
+    only can find our key behind part of array
+    so we make an new array and apply binary search
+    till then its end or break b printing index
+     
+    new array in here case
+    [0,mid-1] (indexes)
+
+else if that is smaller then key
+     same thing here 
+
+     new array in here case
+     [mid+1,size-1] (indexes)
+
+
+so now we can see this will have to run till array became of size 1
+we have to put that in while loop with condition (i<=j)
+
+thats it 
+
+complexity LOG(2,N)

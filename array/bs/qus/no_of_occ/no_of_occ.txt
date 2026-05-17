@@ -1,0 +1,6 @@
+okay so i got array like
+
+[0,1,1,1,1,2,2,3,4]
+
+we have to calculate occurance of 1 
+so we last_occ - first_occ + 1 = no of occ 
